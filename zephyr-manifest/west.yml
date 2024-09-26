@@ -1,0 +1,15 @@
+manifest:
+  remotes:
+    - name: zephyr-rtos
+      url-base: https://github.com/zephyrproject-rtos
+  projects:
+    - name: zephyr
+      repo-path: zephyr
+      remote: zephyr-rtos
+      revision: v3.1.0
+      import:
+        name-allowlist:
+          - cmsis
+          - hal_rpi_pico
+  self:
+    path: zephyr-manifest
